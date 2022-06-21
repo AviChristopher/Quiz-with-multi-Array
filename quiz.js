@@ -1,8 +1,8 @@
 const questions= [
-       ['Question 1', 'goes'],
-       ['Question 2', 'go'],
-       ['Question 3', 'going'],
-       ['Question 4', 'to go']
+       {question: 'She _____ to the store.', answer:'goes'},
+       {question: 'I _____  to sleep at 10pm.', answer:'go'},
+       {question:'We are ______ to the theatre.', answer:'going'},
+       {question:'Would you like ______ to the mall?', answer: 'to go'}
 
 
 ];
@@ -14,8 +14,8 @@ const questions= [
 
 
 for ( i=0;  i< questions.length; i++) {
- let question  = questions [i] [0];
- let answer = questions [i] [1];
+ let question  = questions[i].question;
+ let answer = questions[i].answer;
  let response = prompt (question);
 
   if (response===answer){
